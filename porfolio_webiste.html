@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shubham | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #333;
+      display: flex;
+    }
+
+    aside {
+      width: 220px;
+      background: #f0f0f0;
+      height: 100vh;
+      position: fixed;
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+
+    aside h1 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    aside h1 a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    aside nav a {
+      display: block;
+      margin: 1rem 0;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    aside nav a:hover {
+      color: #007acc;
+    }
+
+    main {
+      margin-left: 220px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .experiences {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .education {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #fafafa;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .contact-icons img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .contact-icons a {
+      display: inline-block;
+      margin: 0.5rem 1rem 0.5rem 0;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .contact-icons a:hover {
+      color: #007acc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+  
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  aside nav a {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-icons a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+</style>
+</head>
+<body>
+<aside>
+<h1><a href="#about">Shubham Shrivastava</a></h1>
+<nav>
+<a href="#about">About</a>
+<a href="#experiences">Experience💼</a>
+<a href="#publication">Publication</a>
+<a href="#education">Education👨‍🎓</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact📞</a>
+<a href="r1.pdf">Resume📄</a>
+</nav>
+</aside>
+<main>
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! I'm a passionate VLSI Engineer with a strong focus on Design for Test (DFT). Currently, I work as a Senior Design Engineer at Marvell Semiconductors, where I'm part of the Data Center Engineering Business Unit. I specialize in end-to-end execution and in building robust test architectures and methodologies that ensure high-quality silicon and reliable performance.</p>
+</section>
+<section id="experiences">
+<h2>Experience</h2>
+<div class="experiences">
+<div class="project">
+<h3>Senior Digital IC Design Engineer</h3>
+<p>I led the DFT execution for a partition within a chiplet-based SoC, where I was responsible for delivering high-quality netlists to the Physical Design team. This hands-on role involved MBIST insertion, EDT-OCC integration, scan stitching, ATPG pattern generation, and simulation—primarily using Tessent. I also contributed to the planning and implementation of Tiled SSN, IJTAG, and BISR architectures, successfully achieving the target ATPG coverage across all hierarchical blocks. Additionally, I enabled Extest pattern generation through OCC planning and ensured DFT alignment with physical and timing constraints by working closely with the PD and STA teams.</p>
+<br>
+<p>
+In addition to execution, I contributed to DFT methodology development by implementing an end-to-end Clock Mesh DFT architecture using Tessent, designed to support high-frequency, large-die designs. I also evaluated and integrated custom MBIST patterns into the flow, enhancing both test coverage and flexibility.</p>
+</div>
+<div class="project">
+<h3>Digital IC Design Intern</h3>
+<p>During my internship, I worked on the Viraj test chip project, where I performed end-to-end DFT execution on a hierarchical block using Tessent. I collaborated with the power team to conduct power correlation between pre-silicon and post-silicon stages by generating VCDs for various ATPG and MBIST patterns. Additionally, I developed a custom TCL script to automate “delete no fault” operations on memory instance pins.</p>
+</div>
+</div>
+</section>
+
+<section id="publication">
+<h2>Publication</h2>
+<div class="experiences">
+<div class="project">
+<h3>IEEE 33rd Asian Test Symposium (ATS), 2024</h3>
+<p>Published a paper titled 'Methods and Apparatus to Support Multiple Synchronous Clocks with a Single Clock Mesh'.<a href="https://ieeexplore.ieee.org/document/10915538">Paper Link</a></p></p>
+</div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="experiences">
+<div class="project">
+<h3>Masters of Technology in Communication Systems - VNIT, Nagpur</h3>
+<p>Completed my Master's degree between 2020 and 2022 with a CGPA of 7.4.</p>
+</div>
+<div class="project">
+<h3>Bachelors of Engineering in Electronics and Telecommunication - GEC, Raipur</h3>
+<p>Completed my Bachelor's degree between 2014 and 2018 with a CGPA of 8.0.</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects">
+<div class="project">
+<h3>Analysis of Heart Rate using ECG signal</h3>
+<p>This project was designed to detect two heart conditions named as Bradycardia and Tachycardia. It was hardware as well as a software-based project. We used signal processing to detect the heart rate from the ECG signal. <a href="https://www.youtube.com/watch?v=VP9qdQuXq4A"> Video demo</a></p>
+</div>
+<div class="project">
+<h3>Keypad based Security System</h3>
+<p>​This is a password-based door locking security system using 8051 microcontroller and a keypad. The opening and closing of the door were modeled by a rotating DC motor. <a href="https://github.com/shubham0312/Keypad-Based-Security-System">Link</a></p>
+</div>
+</div>
+<div class="projects">
+<div class="project">
+<h3>JPEG Image Recovery from Memory Card</h3>
+<p>​Wrote a C program to recover the deleted image files from a memory card. <a href="https://github.com/shubham0312/cs50_2020_psets/tree/master/pset4">Link</a></p>
+</div>
+<div class="project">
+<h3>Speller</h3>
+<p>Made a spell checker in C programming just like Google Search by using the concept of a hash table.​ <a href="https://github.com/shubham0312/cs50_2020_psets/tree/master/pset5">Link</a></p>
+</div>
+</div>
+<div class="projects">
+<div class="project">
+<h3>Carry Select Adder (32 & 64 bit)</h3>
+<p>The aim of the project was to design and simulate model for Carry Select Adder (32 bit & 64 bit) using Verilog HDL on Xilinx ISE Design.​</p>
+</div>
+<div class="project">
+<h3>Matrix Multiplier</h3>
+<p>Made a matrix multiplier using Array MAC and Booth MAC in Verilog HDL. Also compared both the MAC for delay and power consumption parameters.​</p>
+</div>
+</div>
+
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<div class="contact-icons">
+<a href="mailto:your.email@example.com" target="_blank">
+<img alt="Gmail" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png"/>
+          shubham.gec03@gmail.com
+</a>
+<a href="https://www.linkedin.com/in/shubham-shrivastava-023116156/" target="_blank">
+<img alt="LinkedIn" src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+          shubham-shrivastava.linkedin
+</a>
+<a href="https://github.com/shubham0312" target="_blank">
+<img alt="GitHub" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>
+          github.com/shubham0312
+</a>
+</div>
+</section>
+<footer>
+<p>© 2025 Shubham Shrivastava. All rights reserved.</p>
+</footer>
+</main>
+</body>
+</html>
